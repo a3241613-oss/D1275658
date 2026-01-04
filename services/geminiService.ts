@@ -44,7 +44,7 @@ const SYSTEM_INSTRUCTION = `
 // Fix: Corrected the generateItinerary export and ensured it correctly interfaces with the GoogleGenAI client.
 export const generateItinerary = async (data: TripFormData): Promise<{ preview: string; ics: string }> => {
   // Fix: Create a new instance right before making an API call to ensure it uses the most up-to-date API key.
-  const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+  const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY });
   
   const prompt = `
 旅遊地點：${data.destination}
