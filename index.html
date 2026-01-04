@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Travel Calendar - AI 旅行行事曆</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto+Sans+TC', sans-serif;
+            background-color: #f8fafc;
+        }
+        /* Styles for the AI-generated HTML content */
+        .day-card {
+            background: white;
+            border-radius: 1rem;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            border-left: 8px solid #3b82f6;
+        }
+        .day-card h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+        }
+        .day-card .hotel {
+            color: #64748b;
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+            font-style: italic;
+        }
+        .event {
+            border-bottom: 1px solid #f1f5f9;
+            padding: 1.5rem 0;
+        }
+        .event:last-child {
+            border-bottom: none;
+        }
+        .event .time {
+            font-weight: 700;
+            color: #3b82f6;
+            margin-bottom: 0.25rem;
+            font-size: 1.1rem;
+        }
+        .event .title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #0f172a;
+            margin-bottom: 0.5rem;
+        }
+        .event .desc {
+            color: #334155;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        .event .transport {
+            background-color: #f1f5f9;
+            padding: 0.75rem 1rem;
+            border-radius: 0.5rem;
+            font-size: 0.9rem;
+            color: #475569;
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: flex-start;
+        }
+        .event .transport::before {
+            content: "🚌";
+            margin-right: 0.5rem;
+        }
+        .event .map a {
+            color: #2563eb;
+            font-weight: 500;
+            text-decoration: underline;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+        }
+        .event .map a::before {
+            content: "📍";
+            margin-right: 0.3rem;
+            text-decoration: none;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0"
+  }
+}
+</script>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html>

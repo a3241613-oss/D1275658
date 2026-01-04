@@ -1,0 +1,5 @@
+{
+  "name": "AI Travel Calendar",
+  "description": "A professional AI travel itinerary generator that creates beautiful web previews and ready-to-use Google Calendar (.ics) files.",
+  "requestFramePermissions": []
+}
